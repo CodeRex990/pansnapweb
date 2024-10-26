@@ -1,0 +1,232 @@
+ /* ABOUT Section
+		/*About the owners*/
+		.about-owner {
+			display: block;
+			justify-content: center;
+			margin-top: 5rem;
+			align-items: center;
+      
+		}
+
+		.about-owner h2 {
+			position:absolute; 
+			margin-top: 5px; 
+      margin-left: -130px;
+			color: #ffffff;
+      font-size: 30px;
+      font-family:'Montserrat', sans-serif;
+      
+    }
+
+    .about-owner h2 span {
+      font-family: "Montserrat", cursive;
+      font-size: 30px;
+      color:rgb(255, 255, 255);
+    
+    }
+ 
+		.about-owner .image-all {
+			width: 200px;
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+			transition: 0.5s ease-out 100ms;
+			cursor: pointer;
+			object-fit: cover;
+      background-color: #FFDF00;
+      
+			
+		}
+    .image-wrapper {
+      width: 650px;
+      justify-content: space-between;
+      align-items: center;
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+    }
+
+
+   
+
+		.about-owner .image-all:hover {
+			transform: scale(1.05);
+      filter: none;
+		}
+
+		.about-owner .img1 {
+			height: 30rem;
+			margin-right: -30px;
+      filter: sepia(60%);
+		}
+
+		.about-owner .img2 {
+			height: 30rem;
+			margin-right: -30px;
+      filter: sepia(60%);
+		}
+
+		.about-owner .img3 {
+			height: 30rem;
+      filter: sepia(60%);
+		}
+
+		.owner-info {
+			margin-top: 200px;
+		}
+
+		.owner-info td .image-all {
+			border-radius: 10%;
+			transition: 0.5s ease-out 100ms;
+			width: 70%;
+			cursor: pointer;
+			margin-top: 50px;
+     
+      
+		}
+
+		.owner-info td img:hover {
+			transform: scale(1.05);
+		}
+
+		.about-pansnap-text {
+			margin-top: 100px;
+			margin-bottom: 80px;
+			margin: auto;
+    	padding-top: 100px ;
+    	padding-bottom: 20px;
+    	width: 1100px;
+    	max-width: 100%;
+			text-align: justify;
+      line-height: 35px;
+		}
+
+    .about-you-container{
+      display: block;
+    }
+
+
+    .about-you-container.overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+
+    .about-you-container .about-you-image{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      align-items: center;
+    }
+    .about-you-container:hover .overlay{
+        height: 100%;
+    }
+
+    .about-you-container .overlay h3{
+        width: 100%;
+        margin-top: 30%;
+        color:blue;
+        font-size: 4vw;
+        position: absolute;
+        text-align: center;
+        font-family: 'Serif', italic;
+        transform:rotate(-5deg)skewX(-5deg);
+    }
+    @media  (max-width: 600px) {
+
+      .image-all{
+        width: 50px;
+      }
+      .about-owner{
+        display: none;
+      }
+      .about-pansnap{
+        width: 100%;
+        padding: 20px;
+      }
+      
+      .owner-info{
+        margin-top: 100px;
+      }
+
+    }
+
+    
+
+
+  .main_container{
+    /* margin: 6% 0 0 36%; */
+    position:relative ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+
+  }
+  .image{
+    margin-bottom: 100px;
+    margin-left: -360px;
+  
+    display: block;
+    width: 300%;
+    height: auto;
+
+  }
+  .overlay{
+    margin-left: -360px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(132, 79, 20, 0.75);
+    overflow: hidden;
+    width: 300%;
+    height: 0;
+    transition: .5s ease;
+
+  
+  }
+  .main_container:hover .overlay{
+    height: 100%;
+  }
+  .overlay p{
+    text-align: center;
+    line-height: 70px;
+    width: 100%;
+    margin-top: 15%;
+    color: white;
+    font-size: 2.5vw;
+    position: absolute;
+    text-align: center;
+
+
+
+  }
+  .hidden-text{
+    display: none;
+  }
+  @media (max-width:600px){
+    .main_container img{
+      display: flex;
+      height: 100%;
+      width: 350%;
+      padding: 20px;
+      margin-left:-100px;
+    }
+    .overlay{
+      display: none;
+    }
+    .hidden-text{
+      display: block;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      margin-top: -100px;
+    }
+ 
+}
+ 
